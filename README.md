@@ -19,8 +19,8 @@ Platform: Ubuntu
 ### printf - via USB
 1. To CMakeLists.txt add following lines:
     ```
-    pico_enable_stdio_usb(PicoSdkStartTemplate 1)
-    pico_enable_stdio_uart(PicoSdkStartTemplate 0)
+    pico_enable_stdio_usb(WifiManager 1)
+    pico_enable_stdio_uart(WifiManager 0)
     ```
 2. Find connected device: `ls -l /dev/ttyUSB* /dev/ttyACM*`
 3. Start minicom: `sudo minicom -b 115200 -o -D /dev/ttyACM0` 
